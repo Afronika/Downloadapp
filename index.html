@@ -47,11 +47,37 @@
     margin-bottom: 20px;
     font-size: 16px;
   }
+  .logo {
+  width: 180px;                /* Base size for desktop */
+  height: auto;                /* Keep aspect ratio */
+  margin-bottom: 30px;         /* Space below logo */
+  display: block;              /* Centers nicely in container */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;         /* Optional: gives logo slightly rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);      /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 600px) {
+  .logo {
+    width: 140px;
+    margin-bottom: 20px;
+  }
+}
+
 </style>
 </head>
 <body>
 
 <div class="container">
+  <img src="transparent-Photoroom.png" alt="Afronika Logo" class="logo">
   <h1>Get Afronika Mobile App Today!</h1>
   <p>Shop your favorite Gadget anytime, anywhere easily and securely. Download Afronika app now.</p>
 
